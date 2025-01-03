@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Questrial;
+  }
+
+  :root {
+    --brand-green: #122B22;
+    --brand-brown: #8D6549;
+    --brand-white: #F0F0F0;
+    --brand-black: #000000;
+    --brand-soft-green: #41554E;
+
+
+      font-size: 62.5%;
+
+  }
+
+  @font-face {
+    font-family: 'Metanoia';
+    src: url(/fonts/Metanoia/Metanoia.ttf);
+
+  }
+  
+  .menu {
+      display: flex;
+      padding: 0;
+      margin: 0;
+  }
+
+  .logo {
+    text-decoration: none;
+    font-size: 6rem;
+    font-family: Metanoia;
+    color: var(--brand-green);
+  } 
+
+
+.menu .logo {
+    margin: 2.1131rem 0 2.1131rem 10rem;
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: 3.6rem 0 3.6rem 0;
+    gap: 3.6rem;
+    position: absolute;
+    right: 15.7rem;
+
+}
+
+.menu ul li {
+    display: inline;
+    padding: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: var(--brand-black);
+    font-size: 3rem;
+}
+
+.menu.scrolled {
+    position: fixed;
+    background-color: var(--brand-green);
+    transition: background-color 0.3s ease;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+  }
+
+  .menu.scrolled .logo {
+    text-decoration: none;
+    font-size: 6rem;
+    font-family: Metanoia;
+    color: var(--brand-brown);
+    transition: color 2s ease;
+
+  } 
+
+
+  .menu.scrolled .logo {
+    margin: 2.1131rem 0 2.1131rem 10rem;
+
+}
+
+.menu.scrolled ul {
+    list-style: none;
+    display: flex;
+    margin: 3.6rem 0 3.6rem 0;
+    gap: 3.6rem;
+    position: absolute;
+    right: 15.7rem;
+
+}
+
+.menu.scrolled ul li {
+    display: inline;
+    padding: 0;
+}
+
+.menu.scrolled ul li a {
+    text-decoration: none;
+    color: var(--brand-brown);
+    font-size: 3rem;
+    transition: color 0.3s ease;
+
+}
+
+
+.home {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+}
+
+.home .background {
+    background-image: url(/assets/projeto-principal.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: block;
+    align-items: center;
+    width: 100%;
+    height: 92.3vh;
+    filter: brightness(0.5);
+}
+
+.home .homeContent{
+    width: calc(100% - 42.7rem);
+    position: absolute;
+    top: 35.6rem;
+    left: 42.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    text-align: left;
+}
+
+.home .homeContent h1 {
+    font-size: 6rem;
+    font-weight: normal;
+    color: var(--brand-white);
+    word-wrap: break-word;    
+    width: 50%;
+}
+
+
+.home .homeContent p {
+    font-size: 3.6rem;
+    font-weight: lighter;
+    word-wrap: break-word;
+    color: var(--brand-white);
+    width: 50%;
+}
+
+.home button {
+
+    background-color: var(--brand-white);
+    color: var(--brand-black);
+    font-size: 1.6rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4rem;
+    cursor: pointer;
+    border: none;
+    padding: 1.6rem 3.2rem;
+
+    height: 5.1rem;
+    width: 23.8rem;
+
+}
+
+.home button:hover {
+    background-color: var(--brand-green);
+    color: var(--brand-brown);
+    transition: color 0.3s ease;
+}
+
+.projects {
+    width: 100%;
+}
+
+.projects h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 3.6rem;
+    padding: 5.2rem 0 9.5rem 0;
+}
+
+.projects .projetos {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 4.4rem;
+    justify-content: center;
+    margin-bottom: 7.4rem;
+    
+}
+
+.projects .projetos img{
+    width: 38.4rem;
+    height: 32rem;
+}
+
+.aboutMe {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 6.4rem;
+
+}
+
+.aboutMe img {
+    margin-left: 6.7rem;
+    height: 100vh;
+    width: 80%;
+    object-fit: contain;
+}
+
+.aboutMe .aboutMe-Content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+
+.aboutMe .aboutMe-Content h1 {
+    font-size: 3.2rem;
+    margin-bottom: 1.7rem;
+
+}
+
+.aboutMe .aboutMe-Content p {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    
+}
+
+.footer {
+    background-color: var(--brand-green);
+    color: var(--brand-white);
+}
