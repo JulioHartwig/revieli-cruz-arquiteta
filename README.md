@@ -27,7 +27,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 📖 Projeto
 
-Esse projeto tem como objetivo servir de portifólio para a arquiteta e urbanista Revieli Cruz.
+Esse projeto tem como objetivo servir de portifólio para a neuroarquiteta e urbanista Revieli Cruz.
 
 
 
