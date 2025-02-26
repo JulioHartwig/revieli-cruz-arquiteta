@@ -53,6 +53,7 @@ ul {
 }
 
 .menu ul li {
+    position: relative;
     display: inline;
     padding: 0;
 }
@@ -61,6 +62,30 @@ ul {
     text-decoration: none;
     color: var(--brand-black);
     font-size: 3rem;
+}
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0.2rem;
+    background-color: var(--brand-black);
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease;
+    border-radius: 0.2rem;
+}
+
+.menu ul li a:hover::after {
+
+    width: 108%;
+
+}
+
+.menu ul li a:hover {
+
+    color: var(--brand-black)
+
 }
 
 .menu.scrolled {
@@ -100,6 +125,7 @@ ul {
 }
 
 .menu.scrolled ul li {
+    position: relative;
     display: inline;
     padding: 0;
 }
@@ -112,6 +138,29 @@ ul {
 
 }
 
+.menu.scrolled ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0.2rem;
+    background-color: var(--brand-brown);
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease;
+    border-radius: 0.2rem;
+}
+
+.menu.scrolled ul li a:hover::after {
+
+    width: 108%;
+
+}
+
+.menu.scrolled ul li a:hover {
+
+    color: var(--brand-brown)
+
+}
 
 .home {
     position: relative;
