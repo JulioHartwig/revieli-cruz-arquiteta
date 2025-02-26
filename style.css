@@ -331,6 +331,60 @@ ul {
 }
 
 .footer {
+
+    font-size: 1.6rem;
+
+    text-align: center;
+
     background-color: var(--brand-green);
     color: var(--brand-white);
+
+}
+
+.footer p {
+    font-size: 1.6rem;
+}
+
+.messageForm {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 7rem;
+}
+
+.messageForm form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+    max-width: 58.4rem;
+}
+
+.messageForm form input,
+.messageForm form textarea {
+    font-size: 1.6rem;
+ 
+}
+
+.messageForm input,
+.messageForm textarea,
+.messageForm button {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid var(--brand-soft-green);
+    font-size: 1rem;
+    background-color: var(--brand-soft-green);
+}
+
+.messageForm button {
+    background-color: #F0F0F0;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.6rem;
+}
+
+.messageForm button:hover {
+    background-color: #bbb3b3;
 }
