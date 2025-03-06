@@ -172,7 +172,7 @@ ul {
 }
 
 .home .background {
-    background-image: url(/assets/projeto-principal.jpeg);
+    background-image: url(./assets/projeto-principal.jpeg);
     background-size: cover;
     background-position: center;
     display: block;
